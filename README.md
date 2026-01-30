@@ -41,6 +41,7 @@ It covers the complete **DevOps deployment pipeline** — from building Docker i
 ## 📌 Architecture Overview
 Django App → Docker Image → Amazon ECR → ECS Cluster → Task Definition → Service → Public IP → Live Django Application
 
+---
 ## 🛠️ Complete Deployment Steps
 ### ✅ Step 1: Launch an EC2 Instance (For Building Docker Image)
 
@@ -99,6 +100,7 @@ sudo docker images
 ```
 ---
 ## ☁️ AWS ECR Setup
+---
 ### ✅ Step 5: Create ECR Repository
 
 1. Open **AWS Console** → **Amazon ECR**
@@ -108,9 +110,10 @@ sudo docker images
 ```text
 123456789012.dkr.ecr.ap-south-1.amazonaws.com/django-app
 ```
+---
 > ✅ **Note:** In AWS ECR, click on your repository name to open the private repository.  
 > Then select **View push commands** on the right-hand side — you can directly copy and paste the provided commands to authenticate Docker and push your image to ECR.
-
+---
 
 ### ✅ Step 6: Authenticate Docker to Amazon ECR
 
@@ -140,6 +143,7 @@ docker push <ECR_URI>:latest
 ```
 ---
 ## 🚀 ECS Deployment Using Fargate
+---
 ### ✅ Step 9: Create ECS Cluster
 
 1. Open **AWS Console** → **Amazon ECS**
@@ -166,6 +170,7 @@ Create an ECS Service using the following settings:
 - Enable **Public IP access**
 
 Click **Create Service** 🚀
+
 ### ⏳ Step 12: Wait for Container to Start
 
 ECS will pull the image from Amazon ECR and start the container automatically.
@@ -175,6 +180,7 @@ Navigate to:
 **ECS → Cluster → Tasks → Running Task**
 
 Copy the assigned **Public IP address** once the task is running.
+---
 
 ## 🌍 Access Django Application
 
@@ -184,3 +190,4 @@ Open your browser and visit:
 http://<PUBLIC_IP>:8000/hello/
 http://<PUBLIC_IP>:8000/admin/
 ```
+---
