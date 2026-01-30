@@ -108,8 +108,9 @@ sudo docker images
 ```text
 123456789012.dkr.ecr.ap-south-1.amazonaws.com/django-app
 ```
-Note: In AWS ECR, click on your repository name to open the private repository. Then select **View push commands** on the right-hand side. You can directly copy and paste the provided commands to authenticate and push your Docker image.
-![Alt text for the image](https://drive.google.com/file/d/1JoLYxEXyit54u0b_gbkgzT23V7tbbICb/view)
+> ✅ **Note:** In AWS ECR, click on your repository name to open the private repository.  
+> Then select **View push commands** on the right-hand side — you can directly copy and paste the provided commands to authenticate Docker and push your image to ECR.
+
 
 ### ✅ Step 6: Authenticate Docker to Amazon ECR
 
