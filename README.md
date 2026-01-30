@@ -1,4 +1,4 @@
-# 🚀 Deploy a Django Application on AWS using ECS & ECR (Production Ready)
+# 🚀 Deploy a Django Application on AWS using ECS(Fargate) & ECR (Production Ready)
 
 This comprehensive guide demonstrates how to deploy a **Django production application** on AWS using:
 
