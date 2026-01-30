@@ -6,14 +6,6 @@ This comprehensive guide demonstrates how to deploy a **Django production applic
 - Amazon ECR for secure container image storage  
 - Amazon ECS (Fargate) for container orchestration  
 
-It covers the complete **DevOps deployment pipeline** — from building Docker images to running scalable production containers with security and monitoring best practices.# 🚀 Deploy a Django Application on AWS using ECS & ECR (Production Ready)
-
-This comprehensive guide demonstrates how to deploy a **Django production application** on AWS using:
-
-- Docker for containerization  
-- Amazon ECR for secure container image storage  
-- Amazon ECS (Fargate) for container orchestration  
-
 It covers the complete **DevOps deployment pipeline** — from building Docker images to running scalable production containers with security and monitoring best practices.
 
 ## 🧰 Technologies Used
